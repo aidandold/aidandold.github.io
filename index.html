@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aidan Dold — Customer Journey Systems</title>
+  <meta name="description" content="I build automated customer journey systems that turn your leads into clients. Built inside GoHighLevel, running without you touching it.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">Aidan <span class="accent">Dold</span></a>
+      <ul class="nav-links">
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#case-study" class="nav-link">Work</a></li>
+        <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-aurora">
+      <svg class="aurora-svg" viewBox="0 0 1600 1300" preserveAspectRatio="none" style="overflow:visible" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- Hot core: white-hot center fading through gold into amber -->
+          <linearGradient id="moltenCore" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"  stop-color="#3a1605" stop-opacity="0"/>
+            <stop offset="12%" stop-color="#ff7a14" stop-opacity="1"/>
+            <stop offset="38%" stop-color="#ffd27a" stop-opacity="1"/>
+            <stop offset="50%" stop-color="#fff6dc" stop-opacity="1"/>
+            <stop offset="62%" stop-color="#ffd27a" stop-opacity="1"/>
+            <stop offset="88%" stop-color="#ff7a14" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#3a1605" stop-opacity="0"/>
+          </linearGradient>
+
+          <!-- Halo gradient: rich orange bloom around the core -->
+          <linearGradient id="moltenHalo" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"  stop-color="#3a1605" stop-opacity="0"/>
+            <stop offset="18%" stop-color="#c4520a" stop-opacity="0.85"/>
+            <stop offset="38%" stop-color="#ff8a28" stop-opacity="0.95"/>
+            <stop offset="50%" stop-color="#ffb45a" stop-opacity="1"/>
+            <stop offset="62%" stop-color="#ff8a28" stop-opacity="0.95"/>
+            <stop offset="82%" stop-color="#c4520a" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#3a1605" stop-opacity="0"/>
+          </linearGradient>
+
+          <!-- Radial fade: ribbons dissolve toward all edges -->
+          <!-- Soft elliptical fade in userSpaceOnUse: full opacity through
+               the ribbon zone, gentle dissolve to transparent on all sides
+               so peaks/valleys never end on a hard edge. -->
+          <radialGradient id="fadeMask" cx="800" cy="1050" r="1000" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="white" stop-opacity="1"/>
+            <stop offset="55%"  stop-color="white" stop-opacity="0.95"/>
+            <stop offset="85%"  stop-color="white" stop-opacity="0.45"/>
+            <stop offset="100%" stop-color="white" stop-opacity="0"/>
+          </radialGradient>
+          <mask id="ribbonFadeMask" maskUnits="userSpaceOnUse" x="-600" y="-200" width="2800" height="1700">
+            <rect x="-600" y="-200" width="2800" height="1700" fill="url(#fadeMask)"/>
+          </mask>
+        </defs>
+
+        <g mask="url(#ribbonFadeMask)">
+
+          <!-- Ribbons live in the lower half so they don't fight with hero text.
+               Solid stroke colors come from CSS — inline stroke attrs removed so
+               gradient-fill shimmer can't reappear on translation. -->
+
+          <!-- SECONDARY ribbon: slim companion, very gentle wave, sits lowest -->
+          <!-- Ribbons sit below the hero buttons. Plenty of headroom above
+               and below in viewBox so halo + blur render fully. -->
+          <g class="ribbon-mid">
+            <path class="layer-halo-sm"    d="M -480,1130 C -240,1155 0,1105 240,1130 S 720,1155 960,1130 S 1440,1105 1680,1130 S 2160,1155 2400,1130"/>
+            <path class="layer-bloom-sm"   d="M -480,1130 C -240,1155 0,1105 240,1130 S 720,1155 960,1130 S 1440,1105 1680,1130 S 2160,1155 2400,1130"/>
+            <path class="layer-glow-sm"    d="M -480,1130 C -240,1155 0,1105 240,1130 S 720,1155 960,1130 S 1440,1105 1680,1130 S 2160,1155 2400,1130"/>
+            <path class="layer-core-sm"    d="M -480,1130 C -240,1155 0,1105 240,1130 S 720,1155 960,1130 S 1440,1105 1680,1130 S 2160,1155 2400,1130"/>
+            <path class="layer-filament-sm" d="M -480,1130 C -240,1155 0,1105 240,1130 S 720,1155 960,1130 S 1440,1105 1680,1130 S 2160,1155 2400,1130"/>
+          </g>
+
+          <g class="ribbon-hero">
+            <path class="layer-halo"       d="M -480,1000 C -240,970 0,1030 240,1000 S 720,970 960,1000 S 1440,1030 1680,1000 S 2160,970 2400,1000"/>
+            <path class="layer-bloom-wide" d="M -480,1000 C -240,970 0,1030 240,1000 S 720,970 960,1000 S 1440,1030 1680,1000 S 2160,970 2400,1000"/>
+            <path class="layer-bloom-mid"  d="M -480,1000 C -240,970 0,1030 240,1000 S 720,970 960,1000 S 1440,1030 1680,1000 S 2160,970 2400,1000"/>
+            <path class="layer-inner-glow" d="M -480,1000 C -240,970 0,1030 240,1000 S 720,970 960,1000 S 1440,1030 1680,1000 S 2160,970 2400,1000"/>
+            <path class="layer-core"       d="M -480,1000 C -240,970 0,1030 240,1000 S 720,970 960,1000 S 1440,1030 1680,1000 S 2160,970 2400,1000"/>
+            <path class="layer-filament"   d="M -480,1000 C -240,970 0,1030 240,1000 S 720,970 960,1000 S 1440,1030 1680,1000 S 2160,970 2400,1000"/>
+          </g>
+
+        </g>
+      </svg>
+    </div>
+    <div class="hero-noise"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow eyebrow reveal">Customer Journey Systems</div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Stop Losing The Leads <span class="italic-accent">You Already Have</span>
+        </h1>
+        <p class="hero-subtitle reveal reveal-delay-2">
+          I build automated systems that guide your leads from first contact to paying client. Mapped to your customer journey, built inside GoHighLevel, running without you touching it.
+        </p>
+        <div class="hero-ctas reveal reveal-delay-3">
+          <a href="#contact" class="btn btn-primary"><span>Get In Touch</span> <span class="btn-arrow">→</span></a>
+          <a href="#case-study" class="btn btn-secondary">See My Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROBLEM
+       ============================================================ -->
+  <section class="problem">
+    <div class="ambient-glow top-right"></div>
+    <div class="container-narrow">
+      <div class="section-header reveal">
+        <h2 class="section-title">
+          Your Leads Are Going Cold, <span class="italic-accent">And It's Not Your Fault</span>
+        </h2>
+      </div>
+      <div class="problem-content reveal reveal-delay-1">
+        <p>Someone finds you, follows you, fills out your form. You send a follow-up. Maybe two. Then life gets busy and that lead disappears.</p>
+        <p>It's not because they weren't interested. It's because there was nothing in place to keep the conversation going after that first touch. Most service businesses lose leads they already worked to attract, not from lack of effort, but because consistent follow-up is impossible to do manually at any real scale.</p>
+        <div class="problem-callout">
+          <p>A structured system fixes that. One that runs in the background, sends the right message at the right time, and keeps leads warm until they're ready to buy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROCESS
+       ============================================================ -->
+  <section class="process" id="process">
+    <div class="ambient-glow bottom-left"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow eyebrow">The Process</div>
+        <h2 class="section-title">
+          A System Built Around <span class="italic-accent">Your Customer Journey</span>
+        </h2>
+        <p class="section-subtitle">Every engagement follows a clear, repeatable process, from discovery through delivery, so you always know what's happening and why.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-card reveal reveal-delay-1">
+          <span class="process-number">01</span>
+          <h3>Discovery &amp; Mapping</h3>
+          <p>I audit your lead flow, map your full customer journey, and identify where leads fall off. You get a visual flowchart before I build anything.</p>
+        </div>
+        <div class="process-card reveal reveal-delay-2">
+          <span class="process-number">02</span>
+          <h3>Copywriting &amp; Sequence Build</h3>
+          <p>I write every email in your brand voice, structured for each journey stage, then build everything inside GoHighLevel.</p>
+        </div>
+        <div class="process-card reveal reveal-delay-3">
+          <span class="process-number">03</span>
+          <h3>Automation Setup</h3>
+          <p>Every trigger, sequence transition, and behavioral path is configured and tested. When a lead comes in, the system takes over completely.</p>
+        </div>
+        <div class="process-card reveal reveal-delay-4">
+          <span class="process-number">04</span>
+          <h3>Handoff</h3>
+          <p>I walk you through what was built and why. You get documentation explaining your system, plus two weeks of post-launch support or ongoing support if you choose a retainer.</p>
+        </div>
+      </div>
+      <div class="process-deliverable reveal">
+        <p><strong>Deliverable:</strong> A fully automated system that guides leads from first contact to close, without you manually following up on a single one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PULL QUOTE
+       ============================================================ -->
+  <section class="pull-quote">
+    <div class="container-narrow">
+      <div class="reveal">
+        <div class="pull-quote-accent"></div>
+        <p class="pull-quote-text">"Resourceful, learns fast, and delivers work that moves the needle."</p>
+        <p class="pull-quote-attribution"><strong>Jared Moore</strong> &nbsp; · &nbsp; COO, Profile (at time of project)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRICING / FIND YOUR FIT
+       ============================================================ -->
+  <section class="pricing" id="pricing">
+    <div class="ambient-glow top-left"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow eyebrow">Find Your Fit</div>
+        <h2 class="section-title">
+          Three Builds, <span class="italic-accent">Plus What Comes After</span>
+        </h2>
+        <p class="section-subtitle">Tiered builds based on how much of your customer journey you want covered. Each project includes the customer journey map, GoHighLevel setup, and end-to-end testing.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- STARTER -->
+        <div class="tier">
+          <div class="tier-name">Starter</div>
+          <div class="tier-price">$2,500</div>
+          <div class="tier-tagline">Foundational system</div>
+          <ul class="tier-features">
+            <li>3 customized email sequences</li>
+            <li>Customer journey map</li>
+            <li>GoHighLevel account setup</li>
+            <li>Branded email template</li>
+            <li>Linear automation with entry/exit triggers</li>
+            <li>End-to-end testing</li>
+            <li>Documentation package</li>
+            <li>14-day post-launch support</li>
+          </ul>
+        </div>
+
+        <!-- STANDARD (featured) -->
+        <div class="tier featured">
+          <div class="tier-badge">Where Most Clients Land</div>
+          <div class="tier-name">Standard</div>
+          <div class="tier-price">$4,000</div>
+          <div class="tier-tagline">Full lead lifecycle coverage</div>
+          <ul class="tier-features">
+            <li>Everything in Starter</li>
+            <li>5 customized sequences</li>
+            <li>Conditional logic (behavior-based branching)</li>
+            <li>Cross-sequence transitions</li>
+            <li>1 platform integration (booking, CRM, or similar)</li>
+          </ul>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="tier">
+          <div class="tier-name">Premium</div>
+          <div class="tier-price">$6,500<span style="font-size: 1.5rem; color: var(--gold);">+</span></div>
+          <div class="tier-tagline">Comprehensive system</div>
+          <ul class="tier-features">
+            <li>Everything in Standard</li>
+            <li>7+ customized sequences</li>
+            <li>Cross-sequence transitions across the full journey</li>
+            <li>2 platform integrations</li>
+            <li>Pricing scales with sequence count</li>
+          </ul>
+        </div>
+
+        <!-- CUSTOM + RETAINER -->
+        <div class="tier">
+          <div class="tier-name">Custom + Retainer</div>
+          <div class="tier-tagline" style="margin-top: 1rem;">Beyond the standard build</div>
+
+          <div class="tier-section-label">Custom Builds</div>
+          <p class="tier-section-desc">For multi-funnel setups, unusual integrations, or large-scale projects.</p>
+          <div class="tier-section-price">Quoted per project</div>
+
+          <div class="tier-divider"></div>
+
+          <div class="tier-section-label">Ongoing Retainer</div>
+          <p class="tier-section-desc">$1,000/month, 3-month minimum.</p>
+          <ul class="tier-features" style="margin-top: 0.5rem;">
+            <li>System monitoring and optimization</li>
+            <li>Monthly performance reports</li>
+            <li>Sequence testing and improvement</li>
+            <li>CRM hygiene</li>
+            <li>Quarterly strategy call</li>
+            <li>First-line tech support</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="tier-footnote reveal">Specific sequences are chosen based on your business needs during discovery.</p>
+
+      <div class="pricing-cta reveal">
+        <a href="#contact" class="btn btn-primary"><span>Book A Discovery Call</span> <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CASE STUDY TEASER
+       ============================================================ -->
+  <section class="case-teaser" id="case-study">
+    <div class="ambient-glow bottom-right"></div>
+    <div class="container">
+      <div class="reveal">
+        <div class="case-teaser-card">
+          <div class="case-teaser-label">
+            <span class="eyebrow">Case Study</span>
+          </div>
+          <h2>Profile</h2>
+          <div class="case-teaser-body">
+            <div class="case-teaser-text">
+              <p>Profile is a behavioral analytics company helping businesses and athletic programs understand and convert their audience. They had leads coming in with no structured email follow-up.</p>
+              <p>I built a full customer journey map and five sequences inside GoHighLevel, covering every stage from initial contact through re-engagement.</p>
+              <a href="case-studies/profile.html" class="case-teaser-link">See The Full Case Study <span class="btn-arrow">→</span></a>
+            </div>
+            <div class="case-teaser-quote">
+              <blockquote>"Aidan took ownership of setting up our GoHighLevel platform and automating key sales and marketing systems."</blockquote>
+              <cite><strong>Jared Moore</strong><br>COO, Profile (at time of project)</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section class="about">
+    <div class="ambient-glow top-right"></div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <img src="images/headshot.jpg" alt="Aidan Dold">
+        </div>
+        <div class="about-content reveal reveal-delay-1">
+          <div class="section-eyebrow eyebrow" style="margin-bottom: 1rem;">The Person Behind The Work</div>
+          <p>My name is Aidan Dold. I build customer journey systems for service businesses inside GoHighLevel.</p>
+          <p>I started by taking ownership of the full email infrastructure at Profile, a behavioral analytics company. I mapped their customer journey from scratch, wrote every sequence, and built the entire system end to end. That work became the foundation for the framework I now use with every client.</p>
+          <p>What I do is simple: make sure the leads you're already getting don't go cold before they have a chance to convert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA
+       ============================================================ -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Let's See If This <span class="italic-accent" style="font-style: italic; font-weight: 400; color: var(--gold);">Fits Your Business</span></h2>
+        <p>Every system I build starts with a conversation. I want to understand your business, how leads are coming in, and where they are falling off, before I put anything together. From there, I map out your customer journey, recommend the right tier for your business, and we go from there.</p>
+        <div class="cta-buttons">
+          <a href="mailto:aidan.j.dold@gmail.com" class="btn btn-primary"><span>Send Me An Email</span> <span class="btn-arrow">→</span></a>
+          <span class="cta-or">or</span>
+          <a href="#" class="btn btn-secondary">DM Me On Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">Aidan <span class="accent">Dold</span></div>
+        <div class="footer-meta">&copy; 2026 Aidan Dold. All work shown with permission.</div>
+        <ul class="footer-links">
+          <li><a href="mailto:aidan.j.dold@gmail.com" class="footer-link">Email</a></li>
+          <li><a href="#" class="footer-link">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

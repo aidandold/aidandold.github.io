@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile — Case Study — Aidan Dold</title>
+  <meta name="description" content="Customer journey system built for Profile, a behavioral analytics company serving Nike, Amazon, US Army, and more.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">Aidan <span class="accent">Dold</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#process" class="nav-link">Process</a></li>
+        <li><a href="../index.html#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="../index.html#case-study" class="nav-link">Work</a></li>
+        <li><a href="../index.html#contact" class="nav-cta">Get In Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CASE HERO -->
+  <section class="case-hero">
+    <div class="hero-aurora">
+      <svg class="aurora-svg" viewBox="0 0 1600 1300" preserveAspectRatio="none" style="overflow:visible" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="moltenCoreCS" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"  stop-color="#3a1605" stop-opacity="0"/>
+            <stop offset="12%" stop-color="#ff7a14" stop-opacity="1"/>
+            <stop offset="38%" stop-color="#ffd27a" stop-opacity="1"/>
+            <stop offset="50%" stop-color="#fff6dc" stop-opacity="1"/>
+            <stop offset="62%" stop-color="#ffd27a" stop-opacity="1"/>
+            <stop offset="88%" stop-color="#ff7a14" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#3a1605" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="moltenHaloCS" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"  stop-color="#3a1605" stop-opacity="0"/>
+            <stop offset="18%" stop-color="#c4520a" stop-opacity="0.85"/>
+            <stop offset="38%" stop-color="#ff8a28" stop-opacity="0.95"/>
+            <stop offset="50%" stop-color="#ffb45a" stop-opacity="1"/>
+            <stop offset="62%" stop-color="#ff8a28" stop-opacity="0.95"/>
+            <stop offset="82%" stop-color="#c4520a" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#3a1605" stop-opacity="0"/>
+          </linearGradient>
+          <!-- Radial fade centered near the bottom of the hero so the
+               ribbons softly dissolve on every side; no hard edge clip. -->
+          <radialGradient id="fadeMaskCS" cx="800" cy="1180" r="950" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="white" stop-opacity="1"/>
+            <stop offset="55%"  stop-color="white" stop-opacity="0.95"/>
+            <stop offset="85%"  stop-color="white" stop-opacity="0.45"/>
+            <stop offset="100%" stop-color="white" stop-opacity="0"/>
+          </radialGradient>
+          <mask id="ribbonFadeMaskCS" maskUnits="userSpaceOnUse" x="-600" y="0" width="2800" height="1700">
+            <rect x="-600" y="0" width="2800" height="1700" fill="url(#fadeMaskCS)"/>
+          </mask>
+        </defs>
+
+        <g mask="url(#ribbonFadeMaskCS)">
+
+          <g class="ribbon-mid">
+            <path class="layer-halo-sm"    d="M -480,1240 C -240,1265 0,1215 240,1240 S 720,1265 960,1240 S 1440,1215 1680,1240 S 2160,1265 2400,1240"/>
+            <path class="layer-bloom-sm"   d="M -480,1240 C -240,1265 0,1215 240,1240 S 720,1265 960,1240 S 1440,1215 1680,1240 S 2160,1265 2400,1240"/>
+            <path class="layer-glow-sm"    d="M -480,1240 C -240,1265 0,1215 240,1240 S 720,1265 960,1240 S 1440,1215 1680,1240 S 2160,1265 2400,1240"/>
+            <path class="layer-core-sm"    d="M -480,1240 C -240,1265 0,1215 240,1240 S 720,1265 960,1240 S 1440,1215 1680,1240 S 2160,1265 2400,1240"/>
+            <path class="layer-filament-sm" d="M -480,1240 C -240,1265 0,1215 240,1240 S 720,1265 960,1240 S 1440,1215 1680,1240 S 2160,1265 2400,1240"/>
+          </g>
+
+          <g class="ribbon-hero">
+            <path class="layer-halo"       d="M -480,1130 C -240,1100 0,1160 240,1130 S 720,1100 960,1130 S 1440,1160 1680,1130 S 2160,1100 2400,1130"/>
+            <path class="layer-bloom-wide" d="M -480,1130 C -240,1100 0,1160 240,1130 S 720,1100 960,1130 S 1440,1160 1680,1130 S 2160,1100 2400,1130"/>
+            <path class="layer-bloom-mid"  d="M -480,1130 C -240,1100 0,1160 240,1130 S 720,1100 960,1130 S 1440,1160 1680,1130 S 2160,1100 2400,1130"/>
+            <path class="layer-inner-glow" d="M -480,1130 C -240,1100 0,1160 240,1130 S 720,1100 960,1130 S 1440,1160 1680,1130 S 2160,1100 2400,1130"/>
+            <path class="layer-core"       d="M -480,1130 C -240,1100 0,1160 240,1130 S 720,1100 960,1130 S 1440,1160 1680,1130 S 2160,1100 2400,1130"/>
+            <path class="layer-filament"   d="M -480,1130 C -240,1100 0,1160 240,1130 S 720,1100 960,1130 S 1440,1160 1680,1130 S 2160,1100 2400,1130"/>
+          </g>
+
+        </g>
+      </svg>
+    </div>
+    <div class="hero-noise"></div>
+    <div class="container">
+      <a href="../index.html" class="case-back-link reveal"><span class="case-back-arrow">←</span> Back to portfolio</a>
+      <div class="case-hero-eyebrow reveal reveal-delay-1">Case Study</div>
+      <h1 class="reveal reveal-delay-2">Profile</h1>
+      <p class="case-hero-subtitle reveal reveal-delay-3">A complete customer journey system, built inside GoHighLevel.</p>
+      <div class="case-hero-meta reveal reveal-delay-4">
+        <div class="case-meta-item">
+          <div class="case-meta-label">Project</div>
+          <div class="case-meta-value accent">Standard Tier Build</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Deliverables</div>
+          <div class="case-meta-value">5 Sequences</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Platform</div>
+          <div class="case-meta-value">GoHighLevel</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Status</div>
+          <div class="case-meta-value">In Implementation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO THEY ARE -->
+  <section class="case-section">
+    <div class="ambient-glow top-right"></div>
+    <div class="container-narrow">
+      <div class="reveal">
+        <h2>Who <span class="italic-accent">They Are</span></h2>
+        <p>Profile is a behavioral analytics company that helps businesses, athletic programs, and educational institutions understand the people inside their organizations and convert them into engaged customers, athletes, and team members. Their tools turn behavioral data into actionable insights for coaches, executives, and L&amp;D teams.</p>
+
+        <div class="case-client-list">
+          <div class="case-client-list-label">Profile's platform is used by organizations including</div>
+          <div class="case-client-list-names">Nike · Amazon · US Army · Auburn University · Big 10 Conference</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE SITUATION -->
+  <section class="case-section">
+    <div class="ambient-glow bottom-left"></div>
+    <div class="container-narrow">
+      <div class="reveal">
+        <h2>The <span class="italic-accent">Situation</span></h2>
+        <p class="lead">Profile had leads coming in across multiple channels but no structured email follow-up.</p>
+        <p>Contacts who showed interest weren't being nurtured. New users weren't being onboarded systematically. Customers weren't being re-engaged when activity dropped off.</p>
+        <p>The team needed a complete customer journey, not just a few campaign emails. They needed every stage of the lifecycle covered, from initial contact through long-term engagement, running automatically inside the platform they were already using.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I APPROACHED IT -->
+  <section class="case-section">
+    <div class="ambient-glow top-left"></div>
+    <div class="container-narrow">
+      <div class="reveal">
+        <h2>How I <span class="italic-accent">Approached It</span></h2>
+        <p>Before writing a single email, I mapped out Profile's full customer journey: who their leads are, what triggers their interest, what their decision process looks like, and where the natural drop-off points fall. That mapping became the structural foundation for everything that came after.</p>
+        <p>From there, I designed five sequences to cover every stage of the journey, wrote each one in Profile's brand voice, and built the entire system inside GoHighLevel.</p>
+      </div>
+
+      <div class="case-image-feature reveal">
+        <img src="../images/journey-flowchart.jpg" alt="Profile customer journey flowchart">
+        <div class="case-image-caption">The customer journey map: from contact form submission through every decision point in the lifecycle.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WAS BUILT -->
+  <section class="case-section">
+    <div class="ambient-glow bottom-right"></div>
+    <div class="container-narrow">
+      <div class="reveal">
+        <h2>What Was <span class="italic-accent">Built</span></h2>
+        <p>Five sequences covering the full customer lifecycle, each connected through behavior-based logic so contacts move through the journey based on what they actually do, not on a fixed schedule.</p>
+
+        <ul class="case-sequences-list">
+          <li class="case-sequence-item">
+            <div class="case-sequence-number">01</div>
+            <div class="case-sequence-content">
+              <h4>Contact Form Sequence</h4>
+              <p>Initial nurture and qualification for new leads</p>
+            </div>
+          </li>
+          <li class="case-sequence-item">
+            <div class="case-sequence-number">02</div>
+            <div class="case-sequence-content">
+              <h4>Free Trial Onboarding</h4>
+              <p>Drives free trial users toward activation and conversion</p>
+            </div>
+          </li>
+          <li class="case-sequence-item">
+            <div class="case-sequence-number">03</div>
+            <div class="case-sequence-content">
+              <h4>Ongoing Engagement</h4>
+              <p>Long-term nurture for leads who haven't converted yet</p>
+            </div>
+          </li>
+          <li class="case-sequence-item">
+            <div class="case-sequence-number">04</div>
+            <div class="case-sequence-content">
+              <h4>Post-Purchase Onboarding</h4>
+              <p>Welcome and value-driving for new paying customers</p>
+            </div>
+          </li>
+          <li class="case-sequence-item">
+            <div class="case-sequence-number">05</div>
+            <div class="case-sequence-content">
+              <h4>Reactivation</h4>
+              <p>Re-engages trial users who didn't become full customers</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="case-image-feature reveal">
+        <img src="../images/workflow-builder.jpg" alt="GoHighLevel workflow builder showing the automation paths">
+        <div class="case-image-caption">The workflow logic built in GoHighLevel: tag-based branching routes contacts into the right sequence based on their behavior.</div>
+      </div>
+
+      <h3 class="reveal" style="font-family: var(--font-display); font-size: 1.625rem; font-weight: 500; margin-top: 4rem; margin-bottom: 1.5rem; letter-spacing: -0.02em;">Sample Emails</h3>
+
+      <div class="case-emails-grid reveal">
+        <div class="case-email-card">
+          <img src="../images/email-talent.jpg" alt="Talent Isn't the Problem email">
+          <div class="case-email-caption">Talent Isn't the Problem</div>
+        </div>
+        <div class="case-email-card">
+          <img src="../images/email-performers.jpg" alt="Two High Performers email">
+          <div class="case-email-caption">Two High Performers. One Problem.</div>
+        </div>
+        <div class="case-email-card">
+          <img src="../images/email-blindspots.jpg" alt="Blind Spots Leaders Can't See email">
+          <div class="case-email-caption">The Blind Spots Leaders Can't See</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATUS -->
+  <section class="case-section">
+    <div class="container-narrow">
+      <div class="reveal">
+        <h2><span class="italic-accent">Status</span></h2>
+        <div class="case-status">
+          <p>The system is currently in active implementation. Profile is running each sequence, gathering performance data, and the framework is operating end to end. As real conversion data comes in over the coming months, the system will be optimized based on what's actually working.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="case-section">
+    <div class="container-narrow">
+      <div class="case-testimonial reveal">
+        <blockquote>Aidan took ownership of setting up our GoHighLevel platform and automating key sales and marketing systems. He's resourceful, learns fast, and delivers work that moves the needle. Any team looking for marketing automation help would be lucky to have him.</blockquote>
+        <cite>
+          <strong>Jared Moore</strong>
+          COO, Profile (at time of project)
+        </cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Ready For A <span class="italic-accent" style="font-style: italic; font-weight: 400; color: var(--gold);">Similar System</span>?</h2>
+        <p>Every business is different, but the underlying customer journey logic is universal. Let's talk about what would work for yours.</p>
+        <div class="cta-buttons">
+          <a href="mailto:aidan.j.dold@gmail.com" class="btn btn-primary"><span>Send Me An Email</span> <span class="btn-arrow">→</span></a>
+          <span class="cta-or">or</span>
+          <a href="#" class="btn btn-secondary">DM Me On Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">Aidan <span class="accent">Dold</span></div>
+        <div class="footer-meta">&copy; 2026 Aidan Dold. All work shown with permission.</div>
+        <ul class="footer-links">
+          <li><a href="mailto:aidan.j.dold@gmail.com" class="footer-link">Email</a></li>
+          <li><a href="#" class="footer-link">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
